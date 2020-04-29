@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up">
+    <EditText
+        android:id="@+id/reg_Email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="abc@gmail.com"
+        android:inputType="text"
+        android:textColor="@color/color_midblue"
+        android:textColorHint="@color/color_midblue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/reg_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_Email_input"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="6dp"
+        android:hint="password"
+        android:inputType="number"
+        android:textColor="@color/color_midblue"
+        android:textColorHint="@color/color_midblue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_password_input"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="create account"
+        android:textColor="@color/color_midblue"/>
+
+</RelativeLayout>

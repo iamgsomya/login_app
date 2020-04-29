@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_profile">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="NAME"
+        android:inputType="text"
+        android:textColor="@color/color_midblue"
+        android:textColorHint="@color/color_midblue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="6dp"
+        android:hint="I AM 19"
+        android:inputType="number"
+        android:textColor="@color/color_midblue"
+        android:textColorHint="@color/color_midblue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_midblue"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/country"
+        android:layout_marginLeft="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginTop="11dp">
+
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_marginLeft="150dp"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/age"
+            android:layout_marginLeft="150dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Country"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="NAME"
+        android:inputType="text"
+        android:textColor="@color/color_midblue"
+        android:textColorHint="@color/color_midblue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="218dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/color_midblue"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
